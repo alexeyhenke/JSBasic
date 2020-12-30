@@ -3,8 +3,21 @@
     padding: 0;
 }
 
-body {
-    font-family: sans-serif;
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.top {
+    height: 100px;
+    background-color: lightgray;
+}
+
+.top_menu {
+    display: flex;
+    list-style-type: none;
+    padding-top: 42px;
+    font-weight: bold;
 }
 
 .top_h2 {
@@ -12,5 +25,85 @@ body {
     font-size: 36px;
     line-height: 46px;
     letter-spacing: 0.05em;
-    color: #FFFFFF;
+    color: #e05656;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.head_h3 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.lessons_block {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.lesson_item {
+    border: 1px solid rebeccapurple;
+    margin: 5px;
+    padding: 50px;
+    background-color: burlywood;
+}
+
+.top_task {
+    padding: 10px 0 30px 35px;
+}
+
+.code_block {
+    display: block;
+    margin-left: 30px;
+    margin-right: 700px;
+    background-color: lightcyan;
+}
+
+/* tags */
+html,
+body,
+.wrapper {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 90px;
+}
+
+.footer {
+    height: 80px;
+    margin-top: -80px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+a:hover {
+    color: red;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px 50px 10px 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.footer_h5 {
+    padding: 40px;
 }

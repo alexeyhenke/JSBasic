@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/css; charset=UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>JSBasic - Lesson 2</title>
+    <script src="../js/tmp.js"></script>
+    <script src="../js/task3.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <!-- menu -->
+        <div class="top">
+            <div class="container">
+                <ul class="top_menu">
+                    <li><a href="index.html">Home</a></li>&nbsp;&nbsp;
+                    <li><a href="lesson_1.html">Lesson 1</a></li>&nbsp;&nbsp;
+                    <li><a href="lesson_2.html">Lesson 2</a></li>&nbsp;&nbsp;
+                </ul>
+            </div>
+        </div>
+        <!-- task -->
+        <div class="head_h3">
+            <h3>Задание #2:</h3>
+        </div>
+        <div class="container top_task">
+            <table>
+                <tr>
+                    <td><h4>Пример кода</h4></td>
+                    <td><h4>Почему код даёт именно такие результаты?</h4></td>
+                </tr>
+                <tr>
+                    <td><p>var&nbsp;a&nbsp;=&nbsp;1,&nbsp;b&nbsp;=&nbsp;1,&nbsp;c,&nbsp;d;</p></td>
+                    <td>Инициализация</td>
+                </tr>
+                <tr>
+                    <td><p>c&nbsp;=&nbsp;++a;&nbsp;alert(c)&nbsp;//&nbsp;2</p></td>
+                    <td><b>Префиксное сложение.</b> Снгачала делает инкремент на 1 потом присваивание в переменную</td>
+                </tr>
+                <tr>
+                    <td><p>d&nbsp;=&nbsp;b++;&nbsp;alert(d);&nbsp;//&nbsp;1</p></td>
+                    <td><b>Постфиксное сложение.</b> Снгачала делает присваивание в переменную потом инкремент на 1</td>
+                </tr>
+                <tr>
+                    <td><p>c&nbsp;(2+&nbsp;++a);&nbsp;alert(c);&nbsp;//&nbsp;5</p></p></td>
+                    <td>Снгачала делает инкремент на 1 потом сложение (+2)</td>
+                </tr>
+                <tr>
+                    <td><p>d&nbsp;=&nbsp;(2+&nbsp;b++);&nbsp;alert(d);&nbsp;//&nbsp;4</p></td>
+                    <td>Сначала сложение (2 + b) и присваивание результата, потом инкремент на 1</td>
+                </tr>
+                <tr>
+                    <td><p>alert(a);&nbsp;//&nbsp;3</p></td>
+                    <td><p>Результат предыдущих операций</p></td>
+                </tr>
+                <tr>
+                    <td><p>alert(b);&nbsp;//&nbsp;3</p></td>
+                    <td><p>Результат предыдущих операций</p></td>
+                </tr>
+            </table>
+            <!-- second question -->
+            <br>
+            <h4>Чему будет равен x в примере ниже?</h4>
+            <div class="code_block">
+                <p>var a = 2;</p>
+                <p>var x = 1 + (a *= 2);</p>
+            </div>
+            <div>
+                <h4>Ответ: 5 (Сначала действие в скобках (a = 2 * 2) потом увеличение на 1)</h4>
+            </div>
+            <br>
+            <br>
+            <ul>
+                <li>если a и b положительные, вывести их разность</li>
+                <li>если а и b отрицательные, вывести их произведение</li>
+                <li>если а и b разных знаков, вывести их сумму</li>
+            </ul>
+            <hr>
+            <div>
+                <form name="task3" onsubmit="calc()">
+                    <input name="one" id="val1" value="1">
+                    <input name="two" id="val2" value="2">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <br>
+            <hr>
+            <p>Присвоить переменной <b>а</b> значение в промежутке [0..15]. С помощью оператора <b>switch</b>
+                организовать вывод чисел от <b>а</b> до 15</p>
+            <div>
+                <form name="task3" onsubmit="do_switch()">
+                    <input name="three" id="val3" value="1">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <br>
+            <hr>
+            <p>Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), <br>
+                где arg1, arg2 — значения аргументов, operation — строка с названием операции. <br>
+                В зависимости от переданного значения выполнить одну из арифметических операций (использовать функции из
+                пункта 5) и вернуть полученное значение (применить switch).
+            </p>
+            <div>
+                <form name="task3" onsubmit="calculator()">
+                    <input name="one" id="val4" value="1">
+                    <select name="operation" id="val5">
+                        <option value="+">`+`</option>
+                        <option value="-">`-`</option>
+                        <option value="/">`/`</option>
+                        <option value="*">`*`</option>
+                    </select>
+                    <input name="two" id="val6" value="2">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <h5 class="footer_h5">Copyright &copy; Vasily Pupkin</h5>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
