@@ -63,6 +63,11 @@
     background-color: lightcyan;
 }
 
+.result_form {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* tags */
 html,
 body,

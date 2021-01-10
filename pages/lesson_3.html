@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Урок 3. Циклы, массивы, структуры данных</title>
     <script src="../js/simpleNumber.js"></script>
+    <script src="../js/printNumber.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -34,10 +35,30 @@
                 <tr>
                     <td><p>С помощью цикла while вывести все простые числа в промежутке от 0 до 100.</p></td>
                     <td>
-                        <div>
+                        <div class="result_form">
                             <form name="lesson_3" onsubmit="getSimpleNumber()">
-                                <!--                                <input name="one" id="val1" value="1">-->
-                                <!--                                <input name="two" id="val2" value="2">-->
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>С этого урока начинаем работать с функционалом интернет-магазина. Предположим,
+                        есть сущность корзины. Нужно реализовать функционал подсчета стоимости корзины
+                        в зависимости от находящихся в ней товаров.<br>
+                        Товары в корзине хранятся в массиве. Задачи:<br>
+                        a) Организовать такой массив для хранения товаров в корзине;<br>
+                        b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>*Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. Выглядеть это должно так:<br>
+                        <pre style="color: #e05656">for(…){// здесь пусто}</pre>
+                    </td>
+                    <td>
+                        <div class="result_form">
+                            <form name="lesson_3" onsubmit="printNumbers()">
                                 <input type="submit" value="Submit">
                             </form>
                         </div>
