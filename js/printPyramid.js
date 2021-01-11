@@ -12,7 +12,7 @@ function printPyramid() {
         for (let j = 0; j <= i; j++) {
             stars += "* ";
         }
-        pyramid += `${i} ${space}${stars}\r`;
+        pyramid += ` ${space}${stars}\r`;
         space = "";
         stars = "";
     }

@@ -7,6 +7,7 @@
     <script src="../js/simpleNumber.js"></script>
     <script src="../js/printNumber.js"></script>
     <script src="../js/printPyramid.js"></script>
+    <script src="../js/addToBasked.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -44,14 +45,51 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>С этого урока начинаем работать с функционалом интернет-магазина. Предположим,
-                        есть сущность корзины. Нужно реализовать функционал подсчета стоимости корзины
+                    <td>С этого урока начинаем работать с функционалом интернет-магазина.<br>Предположим,
+                        есть сущность корзины.<br>Нужно реализовать функционал подсчета стоимости корзины
                         в зависимости от находящихся в ней товаров.<br>
                         Товары в корзине хранятся в массиве. Задачи:<br>
                         a) Организовать такой массив для хранения товаров в корзине;<br>
                         b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
                     </td>
-                    <td></td>
+                    <td>
+                        <div class="result_form">
+                            <form name="lesson_3" onsubmit="baskedAdd()">
+                                <p>
+                                    <select name="goods" id="goods">
+                                        <option value="40">Картофель (40 р/кг)</option>
+                                        <option value="30">Помидоры (30 р/кг)</option>
+                                        <option value="150">Рыба (150 р/кг)</option>
+                                    </select>
+                                    <!--                                    <input type="checkbox" value="40" id="opt1">&nbsp;Картофель&nbsp;(40&nbsp;р&nbsp;/&nbsp;кг)&nbsp;-->
+                                    <select name="kg" id="opt1_kg">
+                                        <option value="1">1 кг</option>
+                                        <option value="2">2 кг</option>
+                                        <option value="3">3 кг</option>
+                                        <option value="4">4 кг</option>
+                                        <option value="5">5 кг</option>
+                                    </select><br>
+                                    <!--                                    <input type="checkbox" value="30" id="opt2">&nbsp;Помидоры&nbsp;(30&nbsp;р&nbsp;/&nbsp;кг)&nbsp;-->
+                                    <!--                                    <select name="kg" id="opt2_kg">-->
+                                    <!--                                        <option value="1">1 кг</option>-->
+                                    <!--                                        <option value="2">2 кг</option>-->
+                                    <!--                                        <option value="3">3 кг</option>-->
+                                    <!--                                        <option value="4">4 кг</option>-->
+                                    <!--                                        <option value="5">5 кг</option>-->
+                                    <!--                                    </select><br>-->
+                                    <!--                                    <input type="checkbox" value="150" id="opt3">&nbsp;Рыба&nbsp;(150&nbsp;р&nbsp;/&nbsp;кг)&nbsp;-->
+                                    <!--                                    <select name="kg" id="opt3_kg">-->
+                                    <!--                                        <option value="1">1 кг</option>-->
+                                    <!--                                        <option value="2">2 кг</option>-->
+                                    <!--                                        <option value="3">3 кг</option>-->
+                                    <!--                                        <option value="4">4 кг</option>-->
+                                    <!--                                        <option value="5">5 кг</option>-->
+                                    <!--                                    </select><br>-->
+                                </p>
+                                <p><input type="submit" value="Add into basked"></p>
+                            </form>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td>*Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла. Выглядеть это должно так:<br>
@@ -67,7 +105,7 @@
                 </tr>
                 <tr>
                     <td>
-                        *Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды
+                        *Нарисовать пирамиду с помощью console.log, как показано на рисунке,<br>только у вашей пирамиды
                         должно быть 20 рядов, а не 5
                     </td>
                     <td>
