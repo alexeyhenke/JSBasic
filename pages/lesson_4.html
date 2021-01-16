@@ -4,9 +4,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/css; charset=UTF-8">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/getAlert.js"></script>
-    <script src="../js/tempConv.js"></script>
-    <title>JSBasic - Lesson 1</title>
+    <script src="../js/splitNumber.js"></script>
+    <!--    <script src="../js/tempConv.js"></script>-->
+    <title>Урок 4. Объекты в JavaScript</title>
 </head>
 <body>
 <div class="wrapper">
@@ -25,19 +25,28 @@
         </div>
         <!-- task -->
         <div class="head_h3">
-            <h3>Задание #1:</h3>
+            <h3>Задание #4:</h3>
         </div>
         <div class="container top_task">
             <ul>
                 <li>
-                    <div class="code_block">Задать температуру в градусах по Цельсию. Вывести в alert соответствующую
-                        температуру в градусах по
-                        Фаренгейту.
-                        Подсказка:
-                        расчёт идёт по формуле: Tf = (9 / 5) * Tc + 32
-                        , где Tf – температура по Фаренгейту, Tc – температура по Цельсию
+                    <div class="code_block">
+                        Написать функцию, преобразующую число в объект. Передавая на вход число от 0 до 999,
+                        надо получить на выходе объект, в котором в соответствующих свойствах описаны единицы, десятки и
+                        сотни.
+                        Например, для числа 245 надо получить следующий объект:
+                        {‘единицы’: 5, ‘десятки’: 4, ‘сотни’: 2}.
+
+                        Если число превышает 999, необходимо выдать соответствующее сообщение с помощью console.log
+                        и вернуть пустой объект
                     </div>
                     <br>
+                    <div class="result_form">
+                        <form name="lesson_4" onsubmit="splitNumber()">
+                            <input name="getNumber" id="valGetNumber" value="1">&nbsp;
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
                 </li>
                 <li>
                     <div class="code_block">Объявить две переменные: admin и name. Записать в name строку "Василий";
